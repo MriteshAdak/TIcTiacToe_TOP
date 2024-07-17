@@ -1,24 +1,87 @@
 /* styling goes here */
 
 body {
-    border: 1px solid;
-    display: grid;
-    grid-template-columns: 1fr 4fr 1fr;
-    justify-items: center;
+    background-color: black;
+    font-family: 'Courier New', Courier, monospace;
+}
 
+h1, h2 {
+    color: beige;
+    text-align: center;
 }
 
 img {
-    height: 100%;
     width: 100%;
+    height: auto;
     object-fit: contain;
-    border: 1px solid;
+}
+
+button {
+    background-color: inherit;
+}
+
+::backdrop {
+    background-color: black;
+    opacity: 0.7;
+}
+
+dialog {
+    box-sizing: border-box;
+    background-color: black;
+    opacity: 0.8;
+    height: 60%;
+    width: 60%;
+}
+
+#main {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    justify-items: center;
 }
 
 #gameBoard {
+    background-color: bisque;
     border: 1px solid;
     display: grid;
     height: 600px;
     width: 600px;
     grid-template: repeat(3, 200px) / repeat(3, 200px);
+}
+
+#gameBoard img {
+    border: 1px solid;
+}
+
+.player {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#announcement {
+    box-sizing: inherit;
+    height: 100%;
+    width: 100%;
+    background-color: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: beige;
+}
+
+#winner {
+    height: 50%;
+    width: 50%;
+}
+
+#declare {
+    text-wrap: wrap;
+}
+
+#playAgain {
+    color: beige;
+    font-family: inherit;
+    font-weight: bold;
 }

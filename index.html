@@ -8,25 +8,36 @@
     <title>Tic Tac Toe</title>
 </head>
 <body>
-    <div id="playerInfo">
-        <label for="player1">Player 1</label>
-        <input type="text" id="player1">
-        <br>
-        <label for="player2">Player 2</label>
-        <input type="text" id="player2"></div>
-    <div id="gameBoard">
-        <button id="0"></button>
-        <button id="1"></button>
-        <button id="2"></button>
-        <button id="3"></button>
-        <button id="4"></button>
-        <button id="5"></button>
-        <button id="6"></button>
-        <button id="7"></button>
-        <button id="8"></button>
+    <dialog>
+        <div id="announcement">
+            <img id="winner">
+            <h1 id="declare"></h1>
+            <button id="playAgain" onclick="window.location.reload()">Play Again?</button>
+        </div>
+    </dialog>
+    <div id="head">
+        <h1>WARNING: The maker of this page is a child!</h1>
     </div>
-    <div id="result">
-        <p id="winner"></p>
+    <div id="main">
+        <div class="player">
+            <img src="assets/cross_391116.png" alt="Player 1: cross - X" />
+            <h2>MESSI</h2>
+        </div>
+        <div id="gameBoard">
+            <button id="0"></button>
+            <button id="1"></button>
+            <button id="2"></button>
+            <button id="3"></button>
+            <button id="4"></button>
+            <button id="5"></button>
+            <button id="6"></button>
+            <button id="7"></button>
+            <button id="8"></button>
+        </div>
+        <div class="player">
+            <img src="assets/letter-o_9150573.png" alt="Player 2: circle - O">
+            <h2>RONALDO</h2>
+        </div>
     </div>
 </body>
 </html>
