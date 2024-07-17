@@ -1,0 +1,24 @@
+/* styling goes here */
+
+body {
+    border: 1px solid;
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    justify-items: center;
+
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    border: 1px solid;
+}
+
+#gameBoard {
+    border: 1px solid;
+    display: grid;
+    height: 600px;
+    width: 600px;
+    grid-template: repeat(3, 200px) / repeat(3, 200px);
+}
