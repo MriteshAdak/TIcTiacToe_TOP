@@ -4,15 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <script defer src="script.js"></script>
+    <!-- Changed to module type for ES6 imports -->
+    <script type="module" src="dist/main.js"></script>
     <title>Tic Tac Toe</title>
 </head>
 <body>
     <dialog>
         <div id="announcement">
-            <img id="winner">
+            <img id="winner" alt="Winner symbol">
             <h1 id="declare"></h1>
-            <button id="playAgain" onclick="window.location.reload()">Play Again?</button>
+            <!-- Removed inline onclick handler -->
+            <button id="playAgain">Play Again?</button>
         </div>
     </dialog>
     <div id="head">

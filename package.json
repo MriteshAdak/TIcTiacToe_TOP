@@ -1,0 +1,14 @@
+{
+  "name": "tic-tac-toe-typescript",
+  "version": "1.0.0",
+  "description": "Tic Tac Toe game migrated to TypeScript",
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc --watch",
+    "clean": "rm -rf dist"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  },
+  "type": "module"
+}
